@@ -27,4 +27,9 @@ describe Pizza do
     end
   end
 
+  context "Toppings test" do
+    pizza = Pizza.new(name: "sausage")
+    it "should have many toppings" do
+      expect(pizza.toppings.length).to be >= 2
+    end
 end
