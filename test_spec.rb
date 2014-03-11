@@ -1,5 +1,9 @@
 require 'rspec'
 
+class Pizza
+
+end
+
 describe Pizza do
 
   context "Existence Test" do
