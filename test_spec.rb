@@ -1,8 +1,5 @@
 require 'rspec'
 
-class Pizza
-
-end
 
 describe Pizza do
 
@@ -13,4 +10,9 @@ describe Pizza do
     end
   end
 
+  context "Name test" do
+    it "must have a name" do
+      expect { Pizza.new }.to raise_error(ArgumentError)
+    end
+  end
 end
