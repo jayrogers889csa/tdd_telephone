@@ -32,4 +32,5 @@ describe Pizza do
     it "should have many toppings" do
       expect(pizza.toppings.length).to be >= 2
     end
+  end
 end
