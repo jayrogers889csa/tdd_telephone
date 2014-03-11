@@ -8,4 +8,11 @@ describe Pizza do
       expect { Pizza.new }.to raise_error(ArgumentError)
     end
   end
+
+  context "Description test" do
+    it "should have a description" do
+      expect { pizza.description}.to_not raise_error(ArgumentError)
+    end
+  end
+
 end
