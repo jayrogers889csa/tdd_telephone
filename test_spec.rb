@@ -1,5 +1,5 @@
 require 'rspec'
-
+require_relative "test"
 
 describe Pizza do
 
