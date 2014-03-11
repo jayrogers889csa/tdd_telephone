@@ -1,9 +1,11 @@
 class Pizza
-  attr_accessor :name
+  attr_accessor :name, :time_baked, :description
 
   def initialize(args)
-    @name = args.fetch(:name)
-    @description = args.fetch(:description)
+    @name = args[:name]
+    @description = args[:description]
+    @time_baked = 0
+
   end
 end
 
