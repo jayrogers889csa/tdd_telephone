@@ -13,8 +13,6 @@ describe Pizza do
     it "should have a description" do
       pizza = Pizza.new(name: "sausage", description: "good")
       pizza2 = Pizza.new(name: "pepperoni", description: "tasty")
-      #expect { pizza.description}.not_to raise_error(ArgumentError)
-
       expect(pizza.description).to eq("good")
       expect(pizza2.description).to eq("tasty")
     end
