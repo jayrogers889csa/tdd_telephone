@@ -11,7 +11,13 @@ describe Pizza do
 
   context "Description test" do
     it "should have a description" do
-      expect { pizza.description}.to_not raise_error(ArgumentError)
+      expect { pizza.description}.not_to raise_error(ArgumentError)
+    end
+  end
+
+  context "Time Baked test" do
+    it "should have a default time baked" do
+      expect { pizza.time_baked }.to eq 0
     end
   end
 
